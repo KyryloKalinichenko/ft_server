@@ -4,8 +4,8 @@
 #######################################
 service mysql start
 #######################################
-mkdir /var/www/here && touch /var/www/here/index.php
-echo "<?php phpinfo(); ?>" >> /var/www/here/index.php
+mkdir /var/www/here && touch /var/www/here/info.php
+echo "<?php phpinfo(); ?>" >> /var/www/here/info.php
 
 mkdir /etc/ssl
 openssl req -x509 -nodes -days 365 -subj "/C=BE/ST=Brussels/L=Brussels/O=19School/OU=student/CN=here" -newkey rsa:2048 -keyout /etc/ssl/localhost.key -out /etc/ssl/localhost.crt
